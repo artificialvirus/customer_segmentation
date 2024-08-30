@@ -31,8 +31,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m venv venv
-        source venv/bin/activate
         pip install --upgrade pip
         pip install -r requirements.txt
 
@@ -40,11 +38,6 @@ jobs:
       run: |
         ls -l data
         head -n 5 data/Mall_Customers.csv
-
-    - name: Retrain model (if applicable)
-      run: |
-        source venv/bin/activate
-        python train.py  # Replace with your training script if needed
 
     - name: Verify model files
       run: |
