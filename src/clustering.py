@@ -6,6 +6,7 @@ from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_har
 import matplotlib.pyplot as plt
 import joblib
 import pandas as pd
+import os
 
 # Initialize the logger instance
 logger = get_logger(__name__)
@@ -27,8 +28,11 @@ def kmeans_clustering(df, n_clusters):
     logger.info(f"Davies-Bouldin Index for {n_clusters} clusters: {davies_bouldin_avg}")
     logger.info(f"Calinski-Harabasz Index for {n_clusters} clusters: {calinski_harabasz_avg}")
     
-    # Save the KMeans model
+    # Ensure the directory exists
     model_path = '../models/kmeans_model.pkl'
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    
+    # Save the KMeans model
     joblib.dump(kmeans, model_path)
     logger.info(f"KMeans model saved at {model_path}.")
     
@@ -78,6 +82,10 @@ def find_optimal_clusters(df, max_k):
     plt.title('Calinski-Harabasz Index')
 
     plt.tight_layout()
+    
+    # Ensure the logs directory exists
+    os.makedirs('../logs', exist_ok=True)
+    
     plt.savefig(f"../logs/cluster_evaluation_metrics.png")
     logger.info(f"Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.")
     plt.show()
