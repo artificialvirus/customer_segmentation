@@ -39,7 +39,7 @@ To run this project locally, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/customer_segmentation.git
+git clone https://github.com/artificialvirus/customer_segmentation.git
 cd customer_segmentation
 ```
 
