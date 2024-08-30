@@ -82,10 +82,10 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:${{ github.sha }} .
-        docker tag ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:${{ github.sha }} ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
-        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
+        docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/customer_segmentation:${{ github.sha }} .
+        docker tag ${{ secrets.DOCKER_HUB_USERNAME }}/customer_segmentation:${{ github.sha }} ${{ secrets.DOCKER_HUB_USERNAME }}/customer_segmentation:latest
+        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/customer_segmentation:latest
 
     - name: Deploy to production
       run: |
-        ssh user@production-server 'docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest && docker-compose up -d'
+        ssh user@production-server 'docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/customer_segmentation:latest && docker-compose up -d'
