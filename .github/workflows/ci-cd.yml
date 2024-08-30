@@ -1,0 +1,99 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * 0' # Weekly retraining
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Git LFS (if needed)
+      run: |
+        sudo apt-get install git-lfs
+        git lfs install
+        git lfs pull
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.12
+
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Verify CSV file
+      run: |
+        ls -l data
+        head -n 5 data/Mall_Customers.csv
+
+    - name: Retrain model (if applicable)
+      run: |
+        source venv/bin/activate
+        python train.py  # Replace with your training script if needed
+
+    - name: Verify model files
+      run: |
+        ls -l
+        if [ ! -f models/kmeans_model.pkl ]; then echo "models/kmeans_model.pkl not found"; exit 1; fi
+
+    - name: Save KMeans model artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: kmeans_model
+        path: models/kmeans_model.pkl
+
+    - name: Lint with flake8
+      run: |
+        source venv/bin/activate
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Run tests
+      run: |
+        source venv/bin/activate
+        pytest
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download KMeans model artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: kmeans_model
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+    - name: Log in to Docker Hub
+      run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
+
+    - name: Build and push Docker image
+      run: |
+        docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:${{ github.sha }} .
+        docker tag ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:${{ github.sha }} ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
+        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
+
+    - name: Deploy to production
+      run: |
+        ssh user@production-server 'docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest && docker-compose up -d'

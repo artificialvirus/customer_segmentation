@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+dash
+dash-core-components
+dash-html-components
+dash-bootstrap-components
+flask
+gunicorn
+apscheduler
+pytest-cov

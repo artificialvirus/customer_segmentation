@@ -1,0 +1,193 @@
+2024-08-27 12:07:35,733 - INFO - Processed data saved as ../data/processed_customers.csv.
+2024-08-27 12:07:55,978 - INFO - Data visualizations completed.
+2024-08-27 12:07:55,978 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:07:56,058 - INFO - Cluster 1: SSE=667348.56
+2024-08-27 12:07:56,060 - INFO - Cluster 2: SSE=167268.24657269067
+2024-08-27 12:07:56,062 - INFO - Cluster 3: SSE=74600.78271034482
+2024-08-27 12:07:56,063 - INFO - Cluster 4: SSE=42289.38687433534
+2024-08-27 12:07:56,064 - INFO - Cluster 5: SSE=27174.185405567572
+2024-08-27 12:07:56,068 - INFO - Cluster 6: SSE=19465.417011776342
+2024-08-27 12:07:56,070 - INFO - Cluster 7: SSE=14420.167125454096
+2024-08-27 12:07:56,071 - INFO - Cluster 8: SSE=11349.845698042209
+2024-08-27 12:07:56,072 - INFO - Cluster 9: SSE=8923.225510174192
+2024-08-27 12:07:56,074 - INFO - Cluster 10: SSE=7165.951877822332
+2024-08-27 12:07:56,174 - INFO - Elbow Method plot saved as ../logs/elbow_method.png.
+2024-08-27 12:07:58,988 - INFO - Cluster 2: Silhouette Score=0.6212428803937706
+2024-08-27 12:07:58,991 - INFO - Cluster 3: Silhouette Score=0.5806509350527985
+2024-08-27 12:07:58,994 - INFO - Cluster 4: Silhouette Score=0.5573025726203389
+2024-08-27 12:07:58,996 - INFO - Cluster 5: Silhouette Score=0.5415564896015982
+2024-08-27 12:07:58,999 - INFO - Cluster 6: Silhouette Score=0.5283742088247794
+2024-08-27 12:07:59,002 - INFO - Cluster 7: Silhouette Score=0.5172504444732184
+2024-08-27 12:07:59,005 - INFO - Cluster 8: Silhouette Score=0.5075008736942166
+2024-08-27 12:07:59,007 - INFO - Cluster 9: Silhouette Score=0.4963047336881419
+2024-08-27 12:07:59,010 - INFO - Cluster 10: Silhouette Score=0.49095098716183516
+2024-08-27 12:07:59,070 - INFO - Silhouette Method plot saved as ../logs/silhouette_method.png.
+2024-08-27 12:08:00,760 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:08:00,760 - INFO - Data shape: (200, 6)
+2024-08-27 12:08:00,765 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:08:00,766 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:08:00,768 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:08:00,773 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:08:00,773 - INFO - Data shape: (200, 6)
+2024-08-27 12:08:00,775 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:08:00,775 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:08:00,777 - INFO - Model retraining completed and data saved.
+2024-08-27 12:17:43,842 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:17:43,877 - INFO - Cluster 2: Silhouette Score=0.621616459931105, Davies-Bouldin Index=0.501576630676777, Calinski-Harabasz Index=592.3832296324862
+2024-08-27 12:17:43,881 - INFO - Cluster 3: Silhouette Score=0.5813927799534321, Davies-Bouldin Index=0.5036407335519657, Calinski-Harabasz Index=783.8892470174903
+2024-08-27 12:17:43,887 - INFO - Cluster 4: Silhouette Score=0.5585326955624111, Davies-Bouldin Index=0.5058327879686694, Calinski-Harabasz Index=968.3336828674715
+2024-08-27 12:17:43,892 - INFO - Cluster 5: Silhouette Score=0.5433158073332343, Davies-Bouldin Index=0.5091256708368077, Calinski-Harabasz Index=1153.3692711729989
+2024-08-27 12:17:43,897 - INFO - Cluster 6: Silhouette Score=0.5307196777887042, Davies-Bouldin Index=0.5123306552751448, Calinski-Harabasz Index=1299.1084305425977
+2024-08-27 12:17:43,902 - INFO - Cluster 7: Silhouette Score=0.5202402943160996, Davies-Bouldin Index=0.5164038562728115, Calinski-Harabasz Index=1468.1412179230617
+2024-08-27 12:17:43,909 - INFO - Cluster 8: Silhouette Score=0.5109110188013022, Davies-Bouldin Index=0.5202138657912949, Calinski-Harabasz Index=1601.0347371087946
+2024-08-27 12:17:43,914 - INFO - Cluster 9: Silhouette Score=0.5003719644360459, Davies-Bouldin Index=0.5272848178579385, Calinski-Harabasz Index=1784.4436514052381
+2024-08-27 12:17:43,918 - INFO - Cluster 10: Silhouette Score=0.4957377939418255, Davies-Bouldin Index=0.5303469003558752, Calinski-Harabasz Index=1975.8985132643759
+2024-08-27 12:17:44,330 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-27 12:18:01,377 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:18:01,378 - INFO - Data shape: (200, 8)
+2024-08-27 12:18:01,382 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:18:01,386 - INFO - Silhouette Score for 5 clusters: 0.544617988811954
+2024-08-27 12:18:01,386 - INFO - Davies-Bouldin Index for 5 clusters: 0.5086641987307676
+2024-08-27 12:18:01,386 - INFO - Calinski-Harabasz Index for 5 clusters: 1153.7286981232774
+2024-08-27 12:18:01,387 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:18:01,390 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:30:55,091 - INFO - Processed data saved as ../data/processed_customers.csv.
+2024-08-27 12:31:06,720 - INFO - Data visualizations completed.
+2024-08-27 12:31:06,721 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:31:06,777 - INFO - Cluster 2: Silhouette Score=0.6216164599311049, Davies-Bouldin Index=0.501576630676777, Calinski-Harabasz Index=592.3832296324862
+2024-08-27 12:31:06,781 - INFO - Cluster 3: Silhouette Score=0.5813927799534321, Davies-Bouldin Index=0.5036407335519657, Calinski-Harabasz Index=783.8892470174903
+2024-08-27 12:31:06,785 - INFO - Cluster 4: Silhouette Score=0.558532695562411, Davies-Bouldin Index=0.5058327879686693, Calinski-Harabasz Index=968.3336828674715
+2024-08-27 12:31:06,789 - INFO - Cluster 5: Silhouette Score=0.5433158073332343, Davies-Bouldin Index=0.5091256708368077, Calinski-Harabasz Index=1153.3692711729989
+2024-08-27 12:31:06,794 - INFO - Cluster 6: Silhouette Score=0.5307196777887042, Davies-Bouldin Index=0.5123306552751447, Calinski-Harabasz Index=1299.1084305425977
+2024-08-27 12:31:06,799 - INFO - Cluster 7: Silhouette Score=0.5202402943160996, Davies-Bouldin Index=0.5164038562728114, Calinski-Harabasz Index=1468.1412179230615
+2024-08-27 12:31:06,803 - INFO - Cluster 8: Silhouette Score=0.5109110188013023, Davies-Bouldin Index=0.5202138657912942, Calinski-Harabasz Index=1601.0347371087948
+2024-08-27 12:31:06,807 - INFO - Cluster 9: Silhouette Score=0.5003719644360458, Davies-Bouldin Index=0.5272848178579377, Calinski-Harabasz Index=1784.4436514052381
+2024-08-27 12:31:06,812 - INFO - Cluster 10: Silhouette Score=0.4957377939418255, Davies-Bouldin Index=0.5303469003558747, Calinski-Harabasz Index=1975.8985132643759
+2024-08-27 12:31:07,097 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-27 12:31:09,266 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:31:09,267 - INFO - Data shape: (200, 8)
+2024-08-27 12:31:09,269 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:31:09,272 - INFO - Silhouette Score for 5 clusters: 0.5446179888119541
+2024-08-27 12:31:09,272 - INFO - Davies-Bouldin Index for 5 clusters: 0.5086641987307676
+2024-08-27 12:31:09,272 - INFO - Calinski-Harabasz Index for 5 clusters: 1153.7286981232774
+2024-08-27 12:31:09,274 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:31:09,277 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:34:06,346 - INFO - Processed data saved as ../data/processed_customers.csv.
+2024-08-27 12:34:10,984 - INFO - Data visualizations completed.
+2024-08-27 12:34:10,984 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:34:11,045 - INFO - Cluster 2: Silhouette Score=0.6216164599311049, Davies-Bouldin Index=0.501576630676777, Calinski-Harabasz Index=592.3832296324862
+2024-08-27 12:34:11,049 - INFO - Cluster 3: Silhouette Score=0.5813927799534321, Davies-Bouldin Index=0.5036407335519657, Calinski-Harabasz Index=783.8892470174903
+2024-08-27 12:34:11,053 - INFO - Cluster 4: Silhouette Score=0.558532695562411, Davies-Bouldin Index=0.5058327879686693, Calinski-Harabasz Index=968.3336828674715
+2024-08-27 12:34:11,057 - INFO - Cluster 5: Silhouette Score=0.5433158073332343, Davies-Bouldin Index=0.5091256708368077, Calinski-Harabasz Index=1153.3692711729989
+2024-08-27 12:34:11,061 - INFO - Cluster 6: Silhouette Score=0.5307196777887042, Davies-Bouldin Index=0.5123306552751447, Calinski-Harabasz Index=1299.1084305425977
+2024-08-27 12:34:11,066 - INFO - Cluster 7: Silhouette Score=0.5202402943160996, Davies-Bouldin Index=0.5164038562728114, Calinski-Harabasz Index=1468.1412179230615
+2024-08-27 12:34:11,071 - INFO - Cluster 8: Silhouette Score=0.5109110188013023, Davies-Bouldin Index=0.5202138657912942, Calinski-Harabasz Index=1601.0347371087948
+2024-08-27 12:34:11,075 - INFO - Cluster 9: Silhouette Score=0.5003719644360458, Davies-Bouldin Index=0.5272848178579377, Calinski-Harabasz Index=1784.4436514052381
+2024-08-27 12:34:11,080 - INFO - Cluster 10: Silhouette Score=0.4957377939418255, Davies-Bouldin Index=0.5303469003558747, Calinski-Harabasz Index=1975.8985132643759
+2024-08-27 12:34:11,362 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-27 12:34:12,685 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:34:12,685 - INFO - Data shape: (200, 8)
+2024-08-27 12:34:12,688 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:34:12,692 - INFO - Silhouette Score for 5 clusters: 0.5446179888119541
+2024-08-27 12:34:12,692 - INFO - Davies-Bouldin Index for 5 clusters: 0.5086641987307676
+2024-08-27 12:34:12,692 - INFO - Calinski-Harabasz Index for 5 clusters: 1153.7286981232774
+2024-08-27 12:34:12,694 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:34:12,696 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:34:12,702 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:34:12,702 - INFO - Data shape: (200, 8)
+2024-08-27 12:34:12,703 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:34:12,706 - INFO - Silhouette Score for 5 clusters: 0.5446179888119541
+2024-08-27 12:34:12,706 - INFO - Davies-Bouldin Index for 5 clusters: 0.5086641987307676
+2024-08-27 12:34:12,706 - INFO - Calinski-Harabasz Index for 5 clusters: 1153.7286981232774
+2024-08-27 12:34:12,707 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:34:12,709 - INFO - Model retrained and saved the updated processed data.
+2024-08-27 12:34:12,709 - INFO - Model retraining completed and data saved.
+2024-08-27 12:44:16,835 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:44:16,870 - INFO - Cluster 2: Silhouette Score=0.6212428803937706, Davies-Bouldin Index=0.5020679894431841, Calinski-Harabasz Index=591.9587494185719
+2024-08-27 12:44:16,875 - INFO - Cluster 3: Silhouette Score=0.5806509350527985, Davies-Bouldin Index=0.5045861562989349, Calinski-Harabasz Index=782.6413335330155
+2024-08-27 12:44:16,880 - INFO - Cluster 4: Silhouette Score=0.5573025726203388, Davies-Bouldin Index=0.507408396578181, Calinski-Harabasz Index=965.6607089676232
+2024-08-27 12:44:16,885 - INFO - Cluster 5: Silhouette Score=0.5415564896015982, Davies-Bouldin Index=0.5115898042206946, Calinski-Harabasz Index=1148.4613170808955
+2024-08-27 12:44:16,890 - INFO - Cluster 6: Silhouette Score=0.5283742088247793, Davies-Bouldin Index=0.5155731053378024, Calinski-Harabasz Index=1291.4116318563827
+2024-08-27 12:44:16,895 - INFO - Cluster 7: Silhouette Score=0.5172504444732184, Davies-Bouldin Index=0.5208923972401037, Calinski-Harabasz Index=1456.469248107727
+2024-08-27 12:44:16,900 - INFO - Cluster 8: Silhouette Score=0.5075008736942166, Davies-Bouldin Index=0.5254130237316429, Calinski-Harabasz Index=1585.317375317797
+2024-08-27 12:44:16,904 - INFO - Cluster 9: Silhouette Score=0.4963047336881419, Davies-Bouldin Index=0.5331986934517325, Calinski-Harabasz Index=1761.6841402271941
+2024-08-27 12:44:16,909 - INFO - Cluster 10: Silhouette Score=0.490950987161835, Davies-Bouldin Index=0.5374537049644514, Calinski-Harabasz Index=1944.9179440939538
+2024-08-27 12:44:17,323 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-27 12:44:20,605 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:44:20,605 - INFO - Data shape: (200, 6)
+2024-08-27 12:44:20,609 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:44:20,613 - INFO - Silhouette Score for 5 clusters: 0.5440789555078327
+2024-08-27 12:44:20,613 - INFO - Davies-Bouldin Index for 5 clusters: 0.5108103504808004
+2024-08-27 12:44:20,613 - INFO - Calinski-Harabasz Index for 5 clusters: 1149.1771069365873
+2024-08-27 12:44:20,614 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:44:20,617 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:44:27,534 - INFO - Processed data saved as ../data/processed_customers.csv.
+2024-08-27 12:44:32,798 - INFO - Data visualizations completed.
+2024-08-27 12:44:32,798 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:44:32,858 - INFO - Cluster 2: Silhouette Score=0.6212428803937706, Davies-Bouldin Index=0.5020679894431841, Calinski-Harabasz Index=591.9587494185719
+2024-08-27 12:44:32,862 - INFO - Cluster 3: Silhouette Score=0.5806509350527985, Davies-Bouldin Index=0.5045861562989349, Calinski-Harabasz Index=782.6413335330155
+2024-08-27 12:44:32,866 - INFO - Cluster 4: Silhouette Score=0.5573025726203389, Davies-Bouldin Index=0.507408396578181, Calinski-Harabasz Index=965.6607089676232
+2024-08-27 12:44:32,869 - INFO - Cluster 5: Silhouette Score=0.5415564896015982, Davies-Bouldin Index=0.5115898042206946, Calinski-Harabasz Index=1148.4613170808955
+2024-08-27 12:44:32,874 - INFO - Cluster 6: Silhouette Score=0.5283742088247794, Davies-Bouldin Index=0.5155731053378024, Calinski-Harabasz Index=1291.4116318563827
+2024-08-27 12:44:32,878 - INFO - Cluster 7: Silhouette Score=0.5172504444732184, Davies-Bouldin Index=0.5208923972401037, Calinski-Harabasz Index=1456.469248107727
+2024-08-27 12:44:32,883 - INFO - Cluster 8: Silhouette Score=0.5075008736942166, Davies-Bouldin Index=0.5254130237316429, Calinski-Harabasz Index=1585.317375317797
+2024-08-27 12:44:32,887 - INFO - Cluster 9: Silhouette Score=0.4963047336881419, Davies-Bouldin Index=0.5331986934517325, Calinski-Harabasz Index=1761.6841402271941
+2024-08-27 12:44:32,891 - INFO - Cluster 10: Silhouette Score=0.49095098716183516, Davies-Bouldin Index=0.5374537049644514, Calinski-Harabasz Index=1944.9179440939538
+2024-08-27 12:44:33,209 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-27 12:44:34,880 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:44:34,880 - INFO - Data shape: (200, 6)
+2024-08-27 12:44:34,883 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:44:34,886 - INFO - Silhouette Score for 5 clusters: 0.5440789555078328
+2024-08-27 12:44:34,886 - INFO - Davies-Bouldin Index for 5 clusters: 0.5108103504808004
+2024-08-27 12:44:34,886 - INFO - Calinski-Harabasz Index for 5 clusters: 1149.1771069365873
+2024-08-27 12:44:34,887 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:44:34,889 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:49:30,483 - INFO - Processed data saved as ../data/processed_customers.csv.
+2024-08-27 12:49:35,536 - INFO - Data visualizations completed.
+2024-08-27 12:49:35,536 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-27 12:49:35,591 - INFO - Cluster 2: Silhouette Score=0.6212428803937706, Davies-Bouldin Index=0.5020679894431841, Calinski-Harabasz Index=591.9587494185719
+2024-08-27 12:49:35,595 - INFO - Cluster 3: Silhouette Score=0.5806509350527985, Davies-Bouldin Index=0.5045861562989349, Calinski-Harabasz Index=782.6413335330155
+2024-08-27 12:49:35,599 - INFO - Cluster 4: Silhouette Score=0.5573025726203389, Davies-Bouldin Index=0.507408396578181, Calinski-Harabasz Index=965.6607089676232
+2024-08-27 12:49:35,603 - INFO - Cluster 5: Silhouette Score=0.5415564896015982, Davies-Bouldin Index=0.5115898042206946, Calinski-Harabasz Index=1148.4613170808955
+2024-08-27 12:49:35,607 - INFO - Cluster 6: Silhouette Score=0.5283742088247794, Davies-Bouldin Index=0.5155731053378024, Calinski-Harabasz Index=1291.4116318563827
+2024-08-27 12:49:35,612 - INFO - Cluster 7: Silhouette Score=0.5172504444732184, Davies-Bouldin Index=0.5208923972401037, Calinski-Harabasz Index=1456.469248107727
+2024-08-27 12:49:35,616 - INFO - Cluster 8: Silhouette Score=0.5075008736942166, Davies-Bouldin Index=0.5254130237316429, Calinski-Harabasz Index=1585.317375317797
+2024-08-27 12:49:35,621 - INFO - Cluster 9: Silhouette Score=0.4963047336881419, Davies-Bouldin Index=0.5331986934517325, Calinski-Harabasz Index=1761.6841402271941
+2024-08-27 12:49:35,625 - INFO - Cluster 10: Silhouette Score=0.49095098716183516, Davies-Bouldin Index=0.5374537049644514, Calinski-Harabasz Index=1944.9179440939538
+2024-08-27 12:49:35,908 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-27 12:49:38,173 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:49:38,173 - INFO - Data shape: (200, 6)
+2024-08-27 12:49:38,176 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:49:38,180 - INFO - Silhouette Score for 5 clusters: 0.5440789555078328
+2024-08-27 12:49:38,180 - INFO - Davies-Bouldin Index for 5 clusters: 0.5108103504808004
+2024-08-27 12:49:38,180 - INFO - Calinski-Harabasz Index for 5 clusters: 1149.1771069365873
+2024-08-27 12:49:38,181 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:49:38,183 - INFO - Clustered data saved as ../data/clustered_customers.csv.
+2024-08-27 12:49:38,187 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-27 12:49:38,187 - INFO - Data shape: (200, 6)
+2024-08-27 12:49:38,189 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-27 12:49:38,192 - INFO - Silhouette Score for 5 clusters: 0.5440789555078328
+2024-08-27 12:49:38,192 - INFO - Davies-Bouldin Index for 5 clusters: 0.5108103504808004
+2024-08-27 12:49:38,192 - INFO - Calinski-Harabasz Index for 5 clusters: 1149.1771069365873
+2024-08-27 12:49:38,193 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-27 12:49:38,194 - INFO - Model retrained and saved the updated processed data.
+2024-08-27 12:49:38,194 - INFO - Model retraining completed and data saved.
+2024-08-30 07:58:23,057 - INFO - Finding optimal clusters in range 1 to 10.
+2024-08-30 07:58:23,095 - INFO - Cluster 2: Silhouette Score=0.6208062532800954, Davies-Bouldin Index=0.5032662085224401, Calinski-Harabasz Index=590.9525190950493
+2024-08-30 07:58:23,099 - INFO - Cluster 3: Silhouette Score=0.5798191314725409, Davies-Bouldin Index=0.5065510865772732, Calinski-Harabasz Index=779.6140382719976
+2024-08-30 07:58:23,104 - INFO - Cluster 4: Silhouette Score=0.5560466822607717, Davies-Bouldin Index=0.5109947775677944, Calinski-Harabasz Index=960.3025850851399
+2024-08-30 07:58:23,110 - INFO - Cluster 5: Silhouette Score=0.5440789555078327, Davies-Bouldin Index=0.5108103504808004, Calinski-Harabasz Index=1149.1771069365873
+2024-08-30 07:58:23,114 - INFO - Cluster 6: Silhouette Score=0.5272454162183071, Davies-Bouldin Index=0.5199693142354203, Calinski-Harabasz Index=1290.2720711321379
+2024-08-30 07:58:23,119 - INFO - Cluster 7: Silhouette Score=0.5185340214574186, Davies-Bouldin Index=0.5214639083354922, Calinski-Harabasz Index=1463.3045294830795
+2024-08-30 07:58:23,124 - INFO - Cluster 8: Silhouette Score=0.5057974103102125, Davies-Bouldin Index=0.5302890146128335, Calinski-Harabasz Index=1583.3131060781604
+2024-08-30 07:58:23,128 - INFO - Cluster 9: Silhouette Score=0.49761811126865846, Davies-Bouldin Index=0.5340729264243782, Calinski-Harabasz Index=1759.8316880709679
+2024-08-30 07:58:23,134 - INFO - Cluster 10: Silhouette Score=0.49186956847463675, Davies-Bouldin Index=0.5381338756933683, Calinski-Harabasz Index=1931.3092473153888
+2024-08-30 07:58:23,582 - INFO - Cluster evaluation metrics plot saved as ../logs/cluster_evaluation_metrics.png.
+2024-08-30 07:58:25,994 - INFO - Starting KMeans clustering with 5 clusters.
+2024-08-30 07:58:25,995 - INFO - Data shape: (200, 7)
+2024-08-30 07:58:25,999 - INFO - Clustering completed. Assigned clusters: [3 1 0 4 2]
+2024-08-30 07:58:26,003 - INFO - Silhouette Score for 5 clusters: 0.5440789555078327
+2024-08-30 07:58:26,003 - INFO - Davies-Bouldin Index for 5 clusters: 0.5108103504808004
+2024-08-30 07:58:26,003 - INFO - Calinski-Harabasz Index for 5 clusters: 1149.1771069365873
+2024-08-30 07:58:26,005 - INFO - KMeans model saved at ../models/kmeans_model.pkl.
+2024-08-30 07:58:26,008 - INFO - Clustered data saved as ../data/clustered_customers.csv.
