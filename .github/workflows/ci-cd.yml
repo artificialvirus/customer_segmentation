@@ -25,7 +25,7 @@ jobs:
         git lfs pull
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.12
 
@@ -45,7 +45,7 @@ jobs:
         if [ ! -f models/kmeans_model.pkl ]; then echo "models/kmeans_model.pkl not found"; exit 1; fi
 
     - name: Save KMeans model artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: kmeans_model
         path: models/kmeans_model.pkl
@@ -67,10 +67,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Download KMeans model artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: kmeans_model
 
